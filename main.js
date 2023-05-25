@@ -39,6 +39,9 @@ export function createBookCard(book) {
   readBook.setAttribute("type", "checkbox");
   readBook.id = "readBook";
   readBook.checked = book.read;
+  readBook.addEventListener("change", () => {
+    book.read = readBook.checked;
+  });
 
   const lbl = document.createElement("label");
   lbl.textContent = `Has been read`;

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+    <link rel="stylesheet" href="./cssreset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./main.js" defer type="module"></script>
+  </head>
+  <body id="body">
+    <div id="overlay" class="hide"></div>
+    <div class="everything">
+      <header>
+        <div class="header-left">
+          <h1>Library</h1>
+        </div>
+        <div class="header-right">
+          <button id="addBookBtn">Add Book</button>
+          <button id="sortBtn">Sort</button>
+        </div>
+      </header>
+      <main>
+        <div id="books-container"></div>
+      </main>
+
+      <div class="hide" id="form-container">
+        <div class="form-top">
+          <button id="form-Button">X</button>
+          <h1 class="popup-title">Add Book</h1>
+        </div>
+        <form id="form" action="" method="post" class="main-form">
+          <div>
+            <label for="bookTitle">Book Title</label>
+            <input type="text" name="bookTitle" id="bookTitle" />
+          </div>
+          <div>
+            <label for="bookAuthor">Book Author</label>
+            <input type="text" name="bookAuthor" id="bookAuthor" />
+          </div>
+          <div>
+            <label for="bookPages">Book Pages</label>
+            <input type="number" name="bookPages" id="bookPages" />
+          </div>
+
+          <div>
+            <label for="readBook">Has been read?</label>
+            <input type="checkbox" name="readBook" id="readBook" />
+          </div>
+          <input id="submit" type="submit" value="submit" />
+        </form>
+      </div>
+    </div>
+    <footer>Made by Swearfy</footer>
+  </body>
+</html>
